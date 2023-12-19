@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  cursor: url('/assets/cursore.png'), auto;
+  
+}
+
+.navbar {
+  position: fixed;
+  top: 30px; /* Adjust this value to control the distance from the top */
+  left: 0; /* Adjust this value to control the distance from the left */
+  right: 0; /* Adjust this value to control the distance from the right */
+  z-index: 1000; /* Ensure the navbar is above other elements on the page */
+  display: flex; /* Use flexbox to distribute links evenly */
+  width: 100%;
+}
+
+.navbar a {
+  color: white;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  text-decoration: none;
+  text-align: left;
+  font-size: 2vh;
+  font-family: 'Space Mono';
+  letter-spacing: 5px;
+  box-sizing: border-box; 
+  cursor: url('/assets/cursore2.png'), auto;
+  
+}
+
+/* Add styling for active links if needed */
+.navbar a:hover {
+  font-weight: 600;
+}
+
+.navbar a:first-child{
+  margin-left: 30px;
+}
+
+#logo {
+max-height: 20px; /* Modifica la larghezza massima dell'immagine secondo le tue esigenze */
+margin-top: 12px;
+margin-left: 930px; /* Aggiunge uno spazio a sinistra dell'immagine per separarla dagli altri elementi */
+font-family: 'Arial Narrow';
+font-style: italic;
+color: white;
+font-size: 2vh;
+letter-spacing: 0px;
+}
+
+#logo:hover{
+  font-weight: 200;
+}
+
+#infoDiv{
+  position: fixed;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  display: none;
+  z-index: 999;
+  max-width: 300px;
+  color: white;
+  font-size: 2vh;
+  text-align: justify
+}
+
+#infoDiv img {
+    width: 300px; /* o qualsiasi altezza desiderata */
+  }
+  
+  #infoDiv p {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+  }
