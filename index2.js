@@ -22,10 +22,14 @@ defaultTexture.wrapT = THREE.RepeatWrapping;
 // Creazione dei cubi in una griglia 3x3
 const cubes = [];
 const cubePositions = [
-    {x: 1.5, y: 0.5, z: 1.5},
-    {x: 0.5, y: -0.5, z: 0.5},
-    {x: 0.5, y: 0.5, z: -0.5},
-    {x: 1.5, y: 0.5, z: -1.5},
+    { x: 0.5, y: 0.5, z: 0.5 },
+    { x: 0.5, y: -1.5, z: 0.5 },
+    { x: 0.5, y: 1.5, z: -0.5 },
+    { x: 1.5, y: 0.5, z: -0.5 },
+    { x: 0.5, y: 0.5, z: 1.5 },
+    { x: 0.5, y: -0.5, z: 1.5 },
+    { x: 0.5, y: -0.5, z: -1.5 },
+    { x: -0.5, y: 0.5, z: -1.5 },
 ];
 
 for (let i = 0; i < cubePositions.length; i++) {

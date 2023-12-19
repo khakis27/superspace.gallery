@@ -61,10 +61,10 @@ const hoverImageSources = [
 
 // Url
 const cubeUrls = [
-    '/artist/design&ai.html',
-    '/artist/IlSalottoDiMilano.html',
-    '/artist/design&ai.html',
-    '/artist/design&ai.html',
+    'design&ai.html',
+    'IlSalottoDiMilano.html',
+    'cityspeak.html',
+    'thecrossroadsmarket.html',
   ];
 
 for (let i = 0; i < cubePositions.length; i++) {
@@ -165,7 +165,7 @@ let clickStartTime;
 // Funzione per gestire il click breve sul cubo
 function handleShortClick(cubeIndex) {
     const newPageUrl = cubeUrls[cubeIndex];
-    window.open(newPageUrl, '_blank');
+    window.location.href = newPageUrl;
   }
 
 // Gestione dell'evento di clic sulla finestra

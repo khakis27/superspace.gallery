@@ -182,7 +182,7 @@ let clickStartTime;
 // Funzione per gestire il click breve sul cubo
 function handleShortClick(cubeIndex) {
     const newPageUrl = cubeUrls[cubeIndex];
-    window.open(newPageUrl, '_blank');
+    window.location.href = newPageUrl;
   }
 
 // Gestione dell'evento di clic sulla finestra

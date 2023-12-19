@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <title>La Tua Pagina Web</title>
+    <link rel="stylesheet" href="project copy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+  background-image: url('assets/LinkedCubes/poster2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  height: auto;
+  cursor: url('/assets/cursore.png'), auto;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(3px); /* Puoi regolare il valore della sfocatura */
+  z-index: -1;
+}
+
+.navbar {
+    position: fixed;
+    top: 30px; /* Adjust this value to control the distance from the top */
+    left: 0; /* Adjust this value to control the distance from the left */
+    right: 0; /* Adjust this value to control the distance from the right */
+    z-index: 1000; /* Ensure the navbar is above other elements on the page */
+    display: flex; /* Use flexbox to distribute links evenly */
+    width: 100%;
+  }
+  
+  .navbar a {
+    color: white;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-decoration: none;
+    text-align: left;
+    font-size: 2vh;
+    font-family: 'Space Mono';
+    letter-spacing: 5px;
+    box-sizing: border-box; 
+    cursor: url('/assets/cursore2.png'), auto;
+    background-color: black;
+    
+  }
+  
+  /* Add styling for active links if needed */
+  .navbar a:hover {
+    font-weight: 600;
+  }
+  
+  .navbar a:first-child{
+    margin-left: 30px;
+  }
+  
+  #logo {
+  max-height: 20px; /* Modifica la larghezza massima dell'immagine secondo le tue esigenze */
+  margin-left: 930px; /* Aggiunge uno spazio a sinistra dell'immagine per separarla dagli altri elementi */
+  font-family: 'Arial Narrow';
+  font-style: italic;
+  color: white;
+  font-size: 2vh;
+  letter-spacing: 0px;
+  }
+  
+  #logo:hover{
+    font-weight: 200;
+  }
+  
+
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Assicura che la scena sia dietro il contenuto del div */
+}
+
+.text{
+    position: absolute;
+    text-align: left;
+    box-sizing: border-box;
+    color: white;
+    font-weight: 200;
+    line-height: 30px;
+    font-size: 40px;
+    padding-top: 70px;
+    height: 100%;
+
+
+        
+}
+
+
+#p2, #p4 {
+    margin-left: 300px; /* 60 pixel dal margine sinistro per il secondo paragrafo */
+    background-color: black;
+    width: 50%;
+    font-size: 30px;
+    font-family: 'Space mono';   
+}
+
+#p1, #p3, #p5 {
+    margin-left: 600px; /* 60 pixel dal margine sinistro per il secondo paragrafo */
+    background-color: black;
+    width: 50%;
+    font-size: 30px;
+    font-family: 'arial narrow';
+}
+
+#p5 .highlight{
+    color: white;
+    background-color: black;
+    text-decoration: underline;
+}
+
+#p3 .highlight{
+  color: white;
+  background-color: black;
+  text-decoration: underline;
+}
+
+
+p {
+    margin: 5px; /* Ridotto il margine inferiore dei paragrafi a 10px */
+}
+    </style>
+</head>
+<body>
+
+    <div id="canvas-container"></div>
+
+    <div class="text">
+        <div id="p1">
+        <p>Superspace is an immersive metaverse dedicated to cultural and artistic expressions, serving as a dynamic venue for different exhibitions.</p>
+        </div>
+        
+        <div id="p2">
+            <p> INTRO </p>
+        </div>
+
+        <div id="p3">
+        <p>
+            Superstudio's utopian vision of the future was based on the square.
+            They called the black and white grid, created from repeating the square, a “supersurface” 
+            on which society could project new ways of building and living.
+            Crafted with modular cubes, Superspace is a versatile and adaptable environment that easily transforms to accommodate various types of exhibitions,
+            showcasing its fluid and adaptable design. the space is designed so that it can be used as a digital twin of real  exhibition spaces. 
+            
+        </p>     
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="index2.html">EXHIBITION</a>
+        <a href="archive.html">ARCHIVE</a>
+        <a href="project.html">PROJECT</a>
+        <a id="logo" href="start.html">SUPERSPACE.GALLERY</a>
+    </div>
+</body>
+</html>
