@@ -54,17 +54,17 @@ const cubeInfo = [
 
 const hoverImageSources = [
     '/assets/LinkedCubes/img1.png',
-    '/assets/LinkedCubes/img1.png',
+    '/assets/LinkedCubes/img2.png',
     '/assets/LinkedCubes/img1.png',
     '/assets/LinkedCubes/img1.png',
 ];
 
 // Url
 const cubeUrls = [
-    'https://www.example1.com',
-    'https://www.example2.com',
-    'https://www.example3.com',
-    'https://www.example4.com',
+    '/artist/design&ai.html',
+    '/artist/IlSalottoDiMilano.html',
+    '/artist/design&ai.html',
+    '/artist/design&ai.html',
   ];
 
 for (let i = 0; i < cubePositions.length; i++) {

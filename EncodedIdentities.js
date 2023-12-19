@@ -50,25 +50,25 @@ const cubePositions = [
 ];
 
 const cubeInfo = [
-    { imageSrc: '/assets/EncodedIdentities/gif1.gif', caption: 'DR. HEATHER DEWEY-HAGBORGs' },
-    { imageSrc: '/assets/EncodedIdentities/gif2.gif', caption: 'MIMI ONUHA' },
-    { imageSrc: '/assets/EncodedIdentities/gif3.gif', caption: 'JAKE ELVES' },
-    { imageSrc: '/assets/EncodedIdentities/gif4.gif', caption: 'CROSSLUCID' },
-    { imageSrc: '/assets/EncodedIdentities/gif5.gif', caption: 'MELTEM SAHIM' },
-    { imageSrc: '/assets/EncodedIdentities/gif6.gif', caption: 'descrizione 6' },
-    { imageSrc: '/assets/EncodedIdentities/gif7.gif', caption: 'descrizione 7' },
-    { imageSrc: '/assets/EncodedIdentities/gif8.gif', caption: 'descrizione 8' },
+    { imageSrc: '/assets/EncodedIdentities/gifSD1.gif', caption: 'STEPHANIE DINKINS' },
+    { imageSrc: '/assets/EncodedIdentities/gifDR2.gif', caption: 'DOUG ROSMAN' },
+    { imageSrc: '/assets/EncodedIdentities/gifMA3.gif', caption: 'MINNE ATAIRU' },
+    { imageSrc: '/assets/EncodedIdentities/gifMO4.gif', caption: 'MIMI ONUHA' },
+    { imageSrc: '/assets/EncodedIdentities/gifJE5.gif', caption: 'JAKE ELVES' },
+    { imageSrc: '/assets/EncodedIdentities/gifHDH6.gif', caption: 'DR. HEATHER DEWEY-HAGBOR' },
+    { imageSrc: '/assets/EncodedIdentities/gifCL7.gif', caption: 'CROSSLUCID' },
+    { imageSrc: '/assets/EncodedIdentities/gifMS8.gif', caption: 'MELTEM SAHIM' },
 ];
 
 const hoverImageSources = [
-    '/assets/EncodedIdentities/img1.png',
-    '/assets/EncodedIdentities/img2.png',
-    '/assets/EncodedIdentities/img3.png',
-    '/assets/EncodedIdentities/img4.png',
-    '/assets/EncodedIdentities/img8.png',
-    '/assets/EncodedIdentities/img6.png',
-    '/assets/EncodedIdentities/img7.png',
-    '/assets/EncodedIdentities/img8.png'
+    '/assets/EncodedIdentities/imgSD1.png',
+    '/assets/EncodedIdentities/imgDR2.png',
+    '/assets/EncodedIdentities/imgMA3.png',
+    '/assets/EncodedIdentities/imgMO4.png',
+    '/assets/EncodedIdentities/imgJE5.png',
+    '/assets/EncodedIdentities/imgHDH6.png',
+    '/assets/EncodedIdentities/imgCL7.png',
+    '/assets/EncodedIdentities/imgMS8.png'
 ];
 
 // Url
@@ -259,8 +259,8 @@ animate();
 
 function animate() {
 
-    scene.rotation.x += 0.002;
-    scene.rotation.y += 0.002;
+    scene.rotation.x += 0.001;
+    scene.rotation.y += 0.001;
 
     requestAnimationFrame(animate);
     controls.update();
