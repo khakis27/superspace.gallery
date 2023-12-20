@@ -34,53 +34,38 @@ body::before {
 }
 
 .navbar {
-    position: fixed;
-    top: 30px; /* Adjust this value to control the distance from the top */
-    left: 0; /* Adjust this value to control the distance from the left */
-    right: 0; /* Adjust this value to control the distance from the right */
-    z-index: 1000; /* Ensure the navbar is above other elements on the page */
-    display: flex; /* Use flexbox to distribute links evenly */
-    width: 100%;
-  }
-  
-  .navbar a {
-    color: white;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    text-decoration: none;
-    text-align: left;
-    font-size: 2vh;
-    font-family: 'Space Mono';
-    letter-spacing: 5px;
-    box-sizing: border-box; 
-    cursor: url('/assets/cursore2.png'), auto;
-    background-color: black;
-    
-  }
-  
-  /* Add styling for active links if needed */
-  .navbar a:hover {
-    font-weight: 600;
-  }
-  
-  .navbar a:first-child{
-    margin-left: 30px;
-  }
-  
-  #logo {
-  max-height: 20px; /* Modifica la larghezza massima dell'immagine secondo le tue esigenze */
-  margin-left: 930px; /* Aggiunge uno spazio a sinistra dell'immagine per separarla dagli altri elementi */
-  font-family: 'Arial Narrow';
-  font-style: italic;
+  position: fixed;
+  top: 30px; /* Adjust this value to control the distance from the top */
+  left: 0; /* Adjust this value to control the distance from the left */
+  right: 0; /* Adjust this value to control the distance from the right */
+  z-index: 1000; /* Ensure the navbar is above other elements on the page */
+  display: flex; /* Use flexbox to distribute links evenly */
+  width: 100%;
+  font-size: 12px;
+  background-color: black;
+}
+
+.navbar a {
   color: white;
-  font-size: 2vh;
-  letter-spacing: 0px;
-  }
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  text-decoration: none;
+  text-align: left;
+  font-family: 'Space Mono';
+  letter-spacing: 5px;
+  box-sizing: border-box; 
+  cursor: url('/assets/cursore2.png'), auto;
   
-  #logo:hover{
-    font-weight: 200;
-  }
-  
+}
+
+/* Add styling for active links if needed */
+.navbar a:hover {
+  font-weight: 600;
+}
+
+.navbar a:first-child{
+  margin-left: 30px;
+}
 
 #canvas-container {
     position: fixed;
@@ -92,52 +77,60 @@ body::before {
 }
 
 .text{
-    position: absolute;
-    text-align: left;
-    box-sizing: border-box;
-    color: white;
-    font-weight: 200;
-    line-height: 30px;
-    font-size: 40px;
-    padding-top: 70px;
-    height: 100%;
-
-
-        
+  position: absolute;
+  margin-left: 30px;
+  text-align: justify;
+  hyphens: auto;
+  box-sizing: border-box;
+  color: white;
+  font-weight: 200;
+  line-height: 30px;
+  font-size: 40px;
+  padding-top: 30px;
+  height: 100%;
+  overflow-y: auto; 
 }
 
+#p1 {
+  margin-bottom: 750px;
+  margin-left: -2px;
+  background-color: black;
+  width: 10%;
+  letter-spacing: 4px;
+  padding-top: 5px;
+  font-family: 'Space mono';   
+  
+}
 
 #p2, #p4 {
-    margin-left: 300px; /* 60 pixel dal margine sinistro per il secondo paragrafo */
-    background-color: black;
-    width: 50%;
-    font-size: 30px;
-    font-family: 'Space mono';   
+  background-color: black;
+  width: 10%;
+  font-size: 30px;
+  font-family: 'Space mono';   
 }
 
-#p1, #p3, #p5 {
-    margin-left: 600px; /* 60 pixel dal margine sinistro per il secondo paragrafo */
-    background-color: black;
-    width: 50%;
-    font-size: 30px;
-    font-family: 'arial narrow';
+#p3, #p5 {
+  background-color: black;
+  width: 30%;
+  font-size: 24px;
+  font-family: 'arial narrow';
 }
 
 #p5 .highlight{
-    color: white;
-    background-color: black;
-    text-decoration: underline;
+  color: black;
+  background-color: white;
+  text-decoration: underline;
 }
 
 #p3 .highlight{
-  color: white;
-  background-color: black;
-  text-decoration: underline;
+color: black;
+background-color: white;
+text-decoration: underline;
 }
 
 
 p {
-    margin: 5px; /* Ridotto il margine inferiore dei paragrafi a 10px */
+  margin-bottom: 5px; /* Ridotto il margine inferiore dei paragrafi a 10px */
 }
     </style>
 </head>
@@ -168,9 +161,8 @@ p {
 
     <div class="navbar">
         <a href="index2.html">EXHIBITION</a>
-        <a href="archive.html">ARCHIVE</a>
-        <a href="project.html">PROJECT</a>
-        <a id="logo" href="start.html">SUPERSPACE.GALLERY</a>
+        <a href="archive.html">ARCHIVE.</a>
+        <a href="project.html">PROJECT.</a>
     </div>
 </body>
 </html>
