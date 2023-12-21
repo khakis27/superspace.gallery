@@ -44,10 +44,10 @@ const cubePositions = [
 ];
 
 const cubeInfo = [
-    { imageSrc: '/assets/LinkedCubes/img1.png', caption: 'MACHINE & DESIGN AI' },
+    { imageSrc: '/assets/LinkedCubes/gif1.gif', caption: 'MACHINE & DESIGN AI' },
     { imageSrc: '/assets/LinkedCubes/gif2.gif', caption: 'IL SALOTTO DI MILANO' },
     { imageSrc: '/assets/LinkedCubes/gif3.gif', caption: 'CITY SPEAK' },
-    { imageSrc: '/assets/LinkedCubes/img4.png', caption: 'THE CROSSROADS MARKET' },
+    { imageSrc: '/assets/LinkedCubes/gif4.gif', caption: 'THE CROSSROADS MARKET' },
 ];
 
 const hoverImageSources = [
@@ -160,28 +160,25 @@ function handleShortClick(cubeIndex) {
 
 // Gestione dell'evento di clic sulla finestra
 function onDocumentClick(event) {
-    const clickDuration = Date.now() - clickStartTime;
+ // Verifica se il clic è avvenuto all'interno del renderer
+ const rect = renderer.domElement.getBoundingClientRect();
+ const withinRenderer =
+     event.clientX >= rect.left &&
+     event.clientX <= rect.right &&
+     event.clientY >= rect.top &&
+     event.clientY <= rect.bottom;
 
-    // Verifica se il clic è avvenuto all'interno del renderer
-    const rect = renderer.domElement.getBoundingClientRect();
-    const withinRenderer =
-        event.clientX >= rect.left &&
-        event.clientX <= rect.right &&
-        event.clientY >= rect.top &&
-        event.clientY <= rect.bottom;
+ // Esegui l'azione desiderata solo se il clic è avvenuto all'interno del renderer
+ if (withinRenderer) {
+     // Trova gli oggetti intersecati
+     const intersects = raycaster.intersectObjects(cubes.map(({ cube }) => cube));
 
-    // Esegui l'azione desiderata solo se il clic è avvenuto all'interno del renderer
-    if (withinRenderer) {
-        // Se il clic è breve, gestisci il clic breve sul cubo
-        if (clickDuration < longClickDuration) {
-            const intersects = raycaster.intersectObjects(cubes.map(({ cube }) => cube));
-      
-            if (intersects.length > 0) {
-              const cubeIndex = intersects[0].object.userData.index;
-              handleShortClick(cubeIndex);
-            }
-        }
-    }
+     if (intersects.length > 0) {
+         const cubeIndex = intersects[0].object.userData.index;
+         const newPageUrl = cubeUrls[cubeIndex];
+         window.location.href = newPageUrl;
+     }
+ }
 }
 
 // Aggiunta dell'evento di movimento del mouse
@@ -189,42 +186,6 @@ window.addEventListener('mousemove', (event) => {
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
     onMouseMove(event);
-});
-
-// Aggiunta dell'evento di pressione del mouse
-window.addEventListener('mousedown', (event) => {
-    isMousePressedInsideRenderer = true;
-    clickStartTime = Date.now();
-
-    // Imposta un timer per gestire il clic prolungato
-    setTimeout(() => {
-        if (isMousePressedInsideRenderer) {
-            // Se il mouse è ancora premuto, gestisci il clic prolungato
-            const mouse = new THREE.Vector2();
-            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-
-            // Aggiorna il raycaster
-            raycaster.setFromCamera(mouse, camera);
-
-            // Trova gli oggetti intersecati
-            const intersects = raycaster.intersectObjects(cubes.map(({ cube }) => cube));
-
-            if (intersects.length > 0) {
-                controls.enabled = true;
-            }
-        }
-    }, longClickDuration);
-});
-
-// Aggiunta dell'evento di rilascio del mouse
-window.addEventListener('mouseup', () => {
-    isMousePressedInsideRenderer = false;
-
-    // Reimposta le Orbit Controls solo se il clic breve non è stato gestito
-    if (Date.now() - clickStartTime >= longClickDuration) {
-        controls.enabled = true;
-    }
 });
 
 // Avvia l'animazione
