@@ -104,6 +104,12 @@ body {
   text-decoration: underline;
 }
 
+#p5 a{
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+}
+
 
 p {
     margin-bottom: 5px; /* Ridotto il margine inferiore dei paragrafi a 10px */

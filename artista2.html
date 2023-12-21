@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <title>La Tua Pagina Web</title>
+    <link rel="stylesheet" href="project copy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+  background-image: url('assets/EncodedIdentities/poster2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  height: auto;
+  cursor: url('/assets/cursore.png'), auto;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(3px); /* Puoi regolare il valore della sfocatura */
+  z-index: -1;
+}
+
+.navbar {
+  position: fixed;
+  top: 30px; /* Adjust this value to control the distance from the top */
+  left: 0; /* Adjust this value to control the distance from the left */
+  right: 0; /* Adjust this value to control the distance from the right */
+  z-index: 1000; /* Ensure the navbar is above other elements on the page */
+  display: flex; /* Use flexbox to distribute links evenly */
+  width: 100%;
+  font-size: 12px;
+  background-color: black;
+}
+
+.navbar a {
+  color: white;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  text-decoration: none;
+  text-align: left;
+  font-family: 'Space Mono';
+  letter-spacing: 5px;
+  box-sizing: border-box; 
+  cursor: url('/assets/cursore2.png'), auto;
+  
+}
+
+/* Add styling for active links if needed */
+.navbar a:hover {
+  font-weight: 600;
+}
+
+.navbar a:first-child{
+  margin-left: 30px;
+}
+
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Assicura che la scena sia dietro il contenuto del div */
+}
+
+.text{
+  position: absolute;
+  margin-left: 30px;
+  text-align: justify;
+  hyphens: auto;
+  box-sizing: border-box;
+  color: white;
+  font-weight: 200;
+  line-height: 30px;
+  font-size: 40px;
+  padding-top: 30px;
+  height: 100%;
+  overflow-y: auto; 
+}
+
+#p1 {
+  margin-bottom: 750px;
+  margin-left: -2px;
+  background-color: black;
+  width: 30%;
+  letter-spacing: 4px;
+  padding-top: 5px;
+  font-family: 'Space mono';   
+  
+}
+
+#p2, #p4 {
+  background-color: black;
+  width: 10%;
+  font-size: 30px;
+  font-family: 'Space mono';   
+}
+
+#p3, #p5 {
+  background-color: black;
+  width: 30%;
+  font-size: 24px;
+  font-family: 'arial narrow';
+}
+
+#p3 a{
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+}
+
+#p5 a{
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+}
+
+#p5 .highlight{
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+}
+
+#p3 .highlight{
+color: black;
+background-color: white;
+text-decoration: underline;
+}
+
+
+p {
+  margin-bottom: 5px; /* Ridotto il margine inferiore dei paragrafi a 10px */
+}
+    </style>
+</head>
+<body>
+
+    <div id="canvas-container"></div>
+
+    <div class="text">
+        <div id="p1">
+        <p>DOUG.ROSMAN</p>
+        </div>
+        
+        <div id="p2">
+            <p> SELF-CONTAINED</p>
+        </div>
+
+        <div id="p3">
+        <p>
+          A neural network undergoes training to perceive the world through the diverse lens of the artist’s body, processing over 30,000 images. This AI system engages in an algorithmic interpretation, navigating the concept of the body as a subject with multifaceted dimensions. The result is the generation of surreal humanoid figures, unbound by the constraints of physics, biology, and time, embodying a state of simultaneous singularity and multiplicity. The artist strategically employs costumes and choreographed movements in the training images, optimizing the algorithm’s ability to discern and represent the artist within this computational framework. “Self-Contained” delves into the exploration of how one can effectively portray oneself within the confines of a dataset, shedding light on the intricate interplay between the artist’s identity and the shaping forces of algorithmic processes.
+            </br> <a href="https://dougrosman.com/self-contained/"> WEBSITE</a>        
+        </p>     
+        </div>
+
+        <div id="p4">
+            <p>MOTION STUDIES</p>
+        </div>
+
+        <div id="p5">
+        <p>
+          Involves a neural network trained on over 30,000 images of the artist, interpreting the world as variations of the artist’s body. The algorithmic interpretation creates surreal humanoid figures that defy the constraints of physics, biology, and time. The choice of costumes and movements during training aims to optimize the legibility of the artist within the computational system. The installation explores how one represents themselves in a dataset and raises questions about the algorithmic shaping of bodies. The accompanying Motion Studies features on-screen figures and a sequence of nine frames printed on dye-infused aluminum, highlighting the non-temporality of the AI system. The installation was part of the Future Conditions exhibition for SAIC’s Art and Technology Studies department 50th Anniversary programming.
+        </br><a href="dougrosman.com/self-contained-motion-studies/">WEBSITE</a>
+         </br><a href="https://www.stephaniedinkins.com/ntoo.html">GO TO SPATIAL.IO</a>
+            
+        </p>     
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="index2.html">EXHIBITION.</a>
+        <a href="archive.html">ARCHIVE.</a>
+        <a href="project.html">PROJECT</a>
+    </div>
+</body>
+</html>

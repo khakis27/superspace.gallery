@@ -45,16 +45,16 @@ const cubePositions = [
 
 const cubeInfo = [
     { imageSrc: '/assets/LinkedCubes/img1.png', caption: 'MACHINE & DESIGN AI' },
-    { imageSrc: '/assets/LinkedCubes/img1.png', caption: 'MACHINE & DESIGN AI' },
-    { imageSrc: '/assets/LinkedCubes/img1.png', caption: 'MACHINE & DESIGN AI' },
-    { imageSrc: '/assets/LinkedCubes/img1.png', caption: 'MACHINE & DESIGN AI' },
+    { imageSrc: '/assets/LinkedCubes/gif2.gif', caption: 'IL SALOTTO DI MILANO' },
+    { imageSrc: '/assets/LinkedCubes/gif3.gif', caption: 'CITY SPEAK' },
+    { imageSrc: '/assets/LinkedCubes/img4.png', caption: 'THE CROSSROADS MARKET' },
 ];
 
 const hoverImageSources = [
     '/assets/LinkedCubes/img1.png',
     '/assets/LinkedCubes/img2.png',
-    '/assets/LinkedCubes/img1.png',
-    '/assets/LinkedCubes/img1.png',
+    '/assets/LinkedCubes/img3.png',
+    '/assets/LinkedCubes/img4.png',
 ];
 
 // Url

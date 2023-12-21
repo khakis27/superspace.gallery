@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <title>La Tua Pagina Web</title>
+    <link rel="stylesheet" href="project copy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+  background-image: url('assets/EncodedIdentities/poster7.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  height: auto;
+  cursor: url('/assets/cursore.png'), auto;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(3px); /* Puoi regolare il valore della sfocatura */
+  z-index: -1;
+}
+
+.navbar {
+  position: fixed;
+  top: 30px; /* Adjust this value to control the distance from the top */
+  left: 0; /* Adjust this value to control the distance from the left */
+  right: 0; /* Adjust this value to control the distance from the right */
+  z-index: 1000; /* Ensure the navbar is above other elements on the page */
+  display: flex; /* Use flexbox to distribute links evenly */
+  width: 100%;
+  font-size: 12px;
+  background-color: black;
+}
+
+.navbar a {
+  color: white;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  text-decoration: none;
+  text-align: left;
+  font-family: 'Space Mono';
+  letter-spacing: 5px;
+  box-sizing: border-box; 
+  cursor: url('/assets/cursore2.png'), auto;
+  
+}
+
+/* Add styling for active links if needed */
+.navbar a:hover {
+  font-weight: 600;
+}
+
+.navbar a:first-child{
+  margin-left: 30px;
+}
+
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Assicura che la scena sia dietro il contenuto del div */
+}
+
+.text{
+  position: absolute;
+  margin-left: 30px;
+  text-align: justify;
+  hyphens: auto;
+  box-sizing: border-box;
+  color: white;
+  font-weight: 200;
+  line-height: 30px;
+  font-size: 40px;
+  padding-top: 30px;
+  height: 100%;
+  overflow-y: auto; 
+}
+
+#p1 {
+  margin-bottom: 750px;
+  margin-left: -2px;
+  background-color: black;
+  width: 30%;
+  letter-spacing: 4px;
+  padding-top: 5px;
+  font-family: 'Space mono';   
+  
+}
+
+#p2, #p4 {
+  background-color: black;
+  width: 10%;
+  font-size: 30px;
+  font-family: 'Space mono';   
+}
+
+#p3, #p5 {
+  background-color: black;
+  width: 30%;
+  font-size: 24px;
+  font-family: 'arial narrow';
+}
+
+#p3 a{
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+}
+
+#p5 a{
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+}
+
+#p5 .highlight{
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+}
+
+#p3 .highlight{
+color: black;
+background-color: white;
+text-decoration: underline;
+}
+
+
+p {
+  margin-bottom: 5px; /* Ridotto il margine inferiore dei paragrafi a 10px */
+}
+    </style>
+</head>
+<body>
+
+    <div id="canvas-container"></div>
+
+    <div class="text">
+        <div id="p1">
+        <p>CROSSLUCID
+        </p>
+        </div>
+        
+        <div id="p2">
+            <p>LANDSCAPES</p>
+        </div>
+
+        <div id="p3">
+        <p>
+          The collaborative project “Landscapes” involves the use of adversarial networks directed by data alchemists Martino Sarolli and Emanuela Quaranta. Opalescent images, blending portraiture, still life, and expressionist topography, stem from data sets related to the book “Landscapes Between Eternities” (2018, Distanz). Going beyond the book’s content, the creative process encompasses material and movement tests, reflecting an intimate dialogue with adversarial networks. The resulting network of characters reveals a mysterious and primordial aura, exposing the intricate and multidimensional nature of human beings within a system of complementarity, relationality, and communality. Examining the body’s instability, the project seamlessly shifts between virtual avatars, circulating in a transitional reality and inviting a reimagination of new forms for our existence.
+
+        </br> <a href="https://crosslucid.zone/landscapes"> WEBSITE</a>        
+        </p>     
+        </div>
+
+        <div id="p4">
+            <p>OSMOTIC PASSAGE</p>
+        </div>
+
+        <div id="p5">
+        <p>
+          A gesture- modulated, contemplative experience, a shimmering journey through hypnotic landscapes of divine artifacts induced by multilayered psychotronic work of Paul Laffoley. Conceptualised and sculpted in VR, they derive their forms and fluidities from the multiple trainings on spiritual symbolism in conjunction with Adversarial Networks. The viewer, presented with a set of instructions, is invited to this introspection by assuming a trance-inducing pose, a mindful suspension in time and space, a mindful suspension in time & space daydreaming through an opalescent embroidery of sonic and visual paths composed by Giacomo Gianetta. Lead by an anthropomorphic avatar through an opalescent embroidery of sonic and visual paths, they become a portal for individual and collective digital day dreaming. The experience is driven by their endurance and meditative perseverance. For the ones who choose to navigate long enough through the lucid trail, a bespoke content for personal divination will be spawned.
+
+        </br><a href="https://crosslucid.zone/osmotic-passage">WEBSITE</a>
+         </br><a href="https://crosslucid.zone/osmotic-passage">GO TO SPATIAL.IO</a>
+            
+        </p>     
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="index2.html">EXHIBITION.</a>
+        <a href="archive.html">ARCHIVE.</a>
+        <a href="project.html">PROJECT</a>
+    </div>
+</body>
+</html>

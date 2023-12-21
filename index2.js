@@ -71,14 +71,14 @@ const hoverImageSources = [
 
 // Url
 const cubeUrls = [
-    'https://www.example1.com',
-    'https://www.example2.com',
-    'https://www.example3.com',
-    'https://www.example4.com',
-    'https://www.example5.com',
-    'https://www.example6.com',
-    'https://www.example7.com',
-    'https://www.example8.com',
+    'artista1.html',
+    'artista2.html',
+    'artista3.html',
+    'artista4.html',
+    'artista5.html',
+    'artista6.html',
+    'artista7.html',
+    'artista8.html',
 
   ];
 
